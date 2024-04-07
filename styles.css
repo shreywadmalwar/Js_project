@@ -1,0 +1,119 @@
+:root {
+  --primary-color: #A79277;
+  --secondary-color: #9B3922;
+  --text-color: #0C0C0C;
+  --font-family: 'Roboto', sans-serif;
+  --font-size: 1rem;
+  --border-radius: 10px;
+  --transition: all 0.3s ease-out;
+  --bg-color: #EAD8C0;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.nav_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 10px;
+  border-radius: var(--border-radius);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.material-symbols-outlined {
+  font-size: 2rem;
+  margin-right: 10px;
+  color: white;
+}
+
+.nab_bar_ul {
+  display: flex;
+  align-items: center;
+}
+
+.nab_bar_ul li {
+  margin-right: 20px;
+}
+
+.nab_bar_ul li a {
+  color: white;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.nab_bar_ul li a:hover {
+  color: #eb2b00;
+}
+
+#categories_list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  grid-gap: 10px;
+  margin: 20px 0;
+}
+
+.container_item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+  transition: var(--transition);
+  border-radius: 30px;
+  background: #EAD8C0;
+  box-shadow: 15px 15px 30px #EAD8C0,
+    -15px -15px 30px #e6d9c8;
+}
+s
+.container_img {
+  width: 100px;
+  height: auto;
+  border-radius: var(--border-radius);
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 100px;
+}
+
+.container_img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container_name {
+  width: 100%;
+  margin: 5px 20px;
+  flex: 1;
+}
+
+.container_name_h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: var(--secondary-color);
+}
+
+.container_name_p {
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+
+.container_item:hover {
+  transform: scale(1.05);
+  overflow: hidden;
+}
